@@ -1,0 +1,28 @@
+<html>
+    <head>
+            <script type="application/javascript">
+
+                function resizeIFrameToFitContent( iFrame ) {
+                    iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
+                    iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+                }
+                
+                window.addEventListener('DOMContentLoaded', function(e) {
+                    var iFrame = document.getElementById( 'iFrame1' );
+                    resizeIFrameToFitContent( iFrame );
+                
+                    var iframes = document.querySelectorAll("iframe");
+                    for( var i = 0; i < iframes.length; i++) {
+                        resizeIFrameToFitContent( iframes[i] );
+                    }
+                } );
+                
+            </script>
+    </head>
+    <body>
+        <iframe id="iFrame1" src="https://d24lmmvg6ol6bg.cloudfront.net/D53B" 
+            style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" 
+            marginheight="0px" marginwidth="0px" height="98%" width="100%" allowfullscreen>
+        </iframe>
+    </body>
+</html>
