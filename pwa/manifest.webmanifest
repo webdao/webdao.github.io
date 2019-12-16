@@ -1,11 +1,11 @@
 {
-  "name": "material-dashboard-angular",
-  "short_name": "material-dashboard-angular",
+  "name": "网道",
+  "short_name": "网道",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
-  "scope": "/",
-  "start_url": "/",
+  "scope": "/pwa/",
+  "start_url": "/pwa/",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
